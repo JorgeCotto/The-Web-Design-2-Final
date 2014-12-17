@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jorge_cotto_bio</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/skrollr.js"></script>
+  </head>
+  <body>
+  <style>
+  body {
+    font-family: 'Tangerine', serif;
+    font-size: 16px;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+  img {
+    box-shadow: 10px 10px 5px #888888;
+}
+  </style>
+    <div class="center">
+
+
+      <p id="Jorge A. Cotto, Jr. Biography">
+        <h1> Jorge A. Cotto, Jr.</h1>
+        <h3> Biography</h3>
+        <img id="j_cotto_headshot.jpg" src="final/j_cotto_headshot.jpg">
+        <a href="index.html" target="_blank">Back to Home Page</a>
+        <div class="centerdiv">
+            <p class="bio" style="text-align: justify">I am an artist, writer, musician and photographer. I have been an artist and musician since childhood, with formal training beginning at The High School of Art and Design. The mediums I primarily use are graphite, pen and ink and markers for illustration. Acrylic, gouache and watercolors are used for fine art. For the last 10 years or so, I have been freelancing as a graphic designer and illustrator. My biggest clients thus far have been The New York Post and New York Parks and Recreation. My work has been on exhibit in small shows around the city and I once had my work exhibited at the Brooklyn Museum.</p>
+            <p class="bio" style="text-align: justify">As a writer and photographer, I have only received formal training at The College of Staten Island and The City College of New York, both CUNY. My works was published in The John Jay College's Finest publication, which has been published every year for the last 20 years, or so. I worked as a journalist for The Banner,  the school newspaper at The College of Staten Island, and I have had poetry published in small publications around the New York City area. Currently, I am entered in The Promethean Art and Literature contest at CCNY, as well as The Artlist.Com art contest.</p>
+
+            <audio id="click">
+              <source src="click_sound.mp3" type="audio/mpeg">
+              </audio>
+              <script>
+
+              var links = document.getElementsByTagName('a');
+              var click = document.getElementById('click');
+              for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('mousedown', function(e) {
+                  click.play();
+                }, false);
+              }
+
+              </script>
+        </div>
+      </body>
+    </html>

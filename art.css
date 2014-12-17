@@ -1,0 +1,13 @@
+body
+{
+.center-image
+  width:100%;
+  text-align:center;
+}
+
+
+.image_divider
+{
+  display: inline-block;
+  margin: 20px;
+}

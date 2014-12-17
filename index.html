@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pure_cipher_graphics_homepage</title>
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <style>
+    @-webkit-keyframes grow {
+      from {
+        background: #808080;
+        width: 20px;
+        height: 20px;
+        margin: -150px -150px;
+        border-radius: 150px;
+      }
+      to {
+        background: #003977;
+        width: 200px;
+        height: 200px;
+        margin: -250px -250px;
+        border-radius: 250px;
+      }
+    }
+
+    #foo {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      background: #fff;
+      width: 300px;
+      height: 300px;
+      margin: -150px -150px;
+      border-radius: 150px;
+      animation: grow infinite alternate .8s;
+      -webkit-animation: grow infinite alternate .8s;
+    }
+    #bar {
+      position:absolute;
+      top:50%;
+      right:25%;
+      background:black;
+      width:500px;
+      height:500px;
+      margin: -135px -135px;
+      border-radius: 200px;
+    }
+
+    .grow {
+      animation: grow infinite alternate .8s;
+      -webkit-animation: grow infinite alternate .8s;
+    }
+    </style>
+    <div id="foo"></div>
+    <div id="bar" class="grow">
+    </div>
+    <div class="center-image">
+    <h2>Welcome</h2>
+    <div class="center-image">
+    <img src="pure_cipher_graphics_logo.jpg" alt="pure_cipher_graphics_logo" style="width:360px;height:228px;margin:0 auto;">
+
+
+  </div>
+
+    <a class="rollover" id="purple" href="art.html">
+    </a>
+    <a class="rollover" id="blue" href="literature.html">
+    </a>
+    <a class="rollover" id="green" href="bio.html">
+    </a>
+
+
+    <h4> Art       –   Literature   –       Biography</h4>
+
+    <audio autoplay>
+      <source src="15 Sweet Tides.ogg" type="audio/ogg">
+        <source src="15 Sweet Tides.mp3" type="audio/mpeg">
+        </audio>
+
+
+
+
+
+
+    <audio id="click">
+      <source src="click_sound.mp3" type="audio/mpeg">
+      </audio>
+      <script>
+
+      var links = document.getElementsByTagName('a');
+      var click = document.getElementById('click');
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('mousedown', function(e) {
+          click.play();
+        }, false);
+      }
+
+      </script>
+  </body>
+
+  </html>
